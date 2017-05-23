@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/background_slide_unlogin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingTop="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="登陆网易云音乐"
+                        android:textColor="#eaeaea"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="320K高音质无限下载，手机电脑多端同步"
+                        android:textColor="#eaeaea"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/login_button"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/selector_button_edge_gray"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="立即登录"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.wq.coolmusic.view.CustomTextView
+                style="@style/SlideMenuTextViewStyle"
+                android:drawableLeft="@drawable/slide_menu_my_message"
+                android:text="我的消息" />
+
+            <com.wq.coolmusic.view.CustomTextView
+                style="@style/SlideMenuTextViewStyle"
+                android:drawableLeft="@drawable/slide_menu_vip_center"
+                android:text="会员中心" />
+
+            <com.wq.coolmusic.view.CustomTextView
+                style="@style/SlideMenuTextViewStyle"
+                android:drawableLeft="@drawable/slide_menu_shop"
+                android:text="商城" />
+
+            <com.wq.coolmusic.view.CustomTextView
+                style="@style/SlideMenuTextViewStyle"
+                android:drawableLeft="@drawable/slide_menu_free"
+                android:text="在线听歌免流量" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#e4e4e4" />
+
+            <com.wq.coolmusic.view.CustomTextView
+                style="@style/SlideMenuTextViewStyle"
+                android:drawableLeft="@drawable/slide_menu_friend"
+                android:text="我的好友" />
+
+            <com.wq.coolmusic.view.CustomTextView
+                style="@style/SlideMenuTextViewStyle"
+                android:drawableLeft="@drawable/slide_menu_near"
+                android:text="附近的人" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#e4e4e4" />
+
+            <com.wq.coolmusic.view.CustomTextView
+                style="@style/SlideMenuTextViewStyle"
+                android:drawableLeft="@drawable/slide_menu_skin"
+                android:text="个性换肤" />
+
+            <com.wq.coolmusic.view.CustomTextView
+                style="@style/SlideMenuTextViewStyle"
+                android:drawableLeft="@drawable/slide_menu_recognition"
+                android:text="听歌识曲" />
+
+            <com.wq.coolmusic.view.CustomTextView
+                style="@style/SlideMenuTextViewStyle"
+                android:drawableLeft="@drawable/slide_menu_switch_time"
+                android:text="定时停止播放" />
+
+            <com.wq.coolmusic.view.CustomTextView
+                style="@style/SlideMenuTextViewStyle"
+                android:drawableLeft="@drawable/slide_menu_alarm"
+                android:text="音乐闹钟" />
+
+            <com.wq.coolmusic.view.CustomTextView
+                style="@style/SlideMenuTextViewStyle"
+                android:drawableLeft="@drawable/slide_menu_drive"
+                android:text="驾驶模式" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.wq.coolmusic.view.CustomTextView
+            style="@style/SlideMenuBottomTextViewStyle"
+            android:layout_weight="4"
+            android:drawableLeft="@drawable/slide_menu_night_mode"
+            android:text="夜间模式" />
+
+        <com.wq.coolmusic.view.CustomTextView
+            style="@style/SlideMenuBottomTextViewStyle"
+            android:layout_weight="3"
+            android:drawableLeft="@drawable/slide_menu_setting"
+            android:text="设置" />
+
+        <com.wq.coolmusic.view.CustomTextView
+            style="@style/SlideMenuBottomTextViewStyle"
+            android:layout_weight="3"
+            android:drawableLeft="@drawable/slide_menu_exit"
+            android:text="退出" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/bottom_layout"
+        android:background="#e4e4e4" />
+
+</RelativeLayout>
